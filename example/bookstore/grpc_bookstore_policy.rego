@@ -14,10 +14,6 @@ is_free_user {
 }
 
 is_user_book_reviewer {
-	is_paid_user
-}
-#OR
-is_user_book_reviewer {
 	data.org.is_org_admin
 }
 
