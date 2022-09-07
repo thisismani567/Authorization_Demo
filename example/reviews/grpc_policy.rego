@@ -9,6 +9,10 @@ is_workload_allowed_to_call_reviews {
   false
 }
 
+is_user_book_reviewer {
+	lower(input.subject.user) == premium_users[_]
+}
+
 allow {
   is_review_service
   is_workload_allowed_to_call_reviews
