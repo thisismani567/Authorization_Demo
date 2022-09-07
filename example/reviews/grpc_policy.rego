@@ -5,8 +5,7 @@ is_review_service {
 }
 
 is_workload_allowed_to_call_reviews {
-  #input.subject.sourcePrincipal == "spiffe://cluster.local/ns/default/sa/bookinfo-productpage"
-  false
+  input.subject.sourcePrincipal == "spiffe://cluster.local/ns/default/sa/bookinfo-productpage"
 }
 
 allow {
