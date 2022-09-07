@@ -1,7 +1,5 @@
 package example.authz.grpc
 
-default allow := false
-
 is_review_service {
 	startswith(input.path, "/reviews/") == true
 }
