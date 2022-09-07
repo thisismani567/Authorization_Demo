@@ -1,4 +1,5 @@
 package example.authz.grpc
+import data.example.premium_users
 
 is_review_service {
 	startswith(input.path, "/reviews/") == true
