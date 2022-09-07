@@ -13,4 +13,5 @@ is_workload_allowed {
 allow {
   is_review_service
   is_workload_allowed
+  is_user_book_reviewer
 }
