@@ -6,8 +6,7 @@ is_review_service {
 }
 
 is_workload_allowed_to_call_reviews {
-  # No workload is currently allowed to call reviews service
-  false
+  input.subject.sourcePrincipal == "spiffe://cluster.local/ns/default/sa/bookinfo-productpage"
 }
 
 is_user_book_reviewer {
