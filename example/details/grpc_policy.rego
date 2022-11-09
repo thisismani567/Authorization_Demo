@@ -9,7 +9,6 @@ is_workload_allowed_to_call_details {
 }
 
 allow {
-  false
   is_details_service
   is_workload_allowed_to_call_details
   is_user_book_viewer
